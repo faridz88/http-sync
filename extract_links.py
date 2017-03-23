@@ -46,7 +46,7 @@ class ExtractLinks():
 
     def get_recursive_links(self, relative_path=''):
         if relative_path != '' and relative_path[-1] != '/':
-            relative_path += '/'
+            return [relative_path]
         links = list()
         raw_page = self.get_raw_page(self.base_url + relative_path)
         all_relative_links = self.get_all_relative_links(raw_page)
