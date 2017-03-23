@@ -1,0 +1,6 @@
+*.pyc
+venv
+*.sqlite
+.vscode
+*.conf
+!settings.conf
